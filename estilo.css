@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Varaibles*/
+:root{
+    --letra_tipo_1: "Inter", sans-serif;
+}
+/*--------------------------------------------------*/
+
+body{
+    background-color: #B5C0D0;
+    box-sizing: border-box;
+
+}
+
+.header{
+    font-family: var(--letra_tipo_1);
+    font-size: 32px;
+    font-weight: 800;
+    background-color: #2F3645;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #B5C0D0;
+}
+
+.box_padre{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.box_texto{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: none;
+    background-color: #B5C0D0   ;
+    font-family: var(--letra_tipo_1);
+    font-size: 32px;
+    font-weight: 400;
+    color: black;    
+}
+
+.box_texto::placeholder{
+    font-family: var(--letra_tipo_1);
+    font-size: 32px;
+    color: #2F3645;
+}
+
+.box_texto:focus,
+.box_texto:active{
+    border: none;
+    outline: none;
+}
+
+.box_terminos{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+.box_terminos_advertencia{
+    height: 20px;
+}
+
+.box_terminos_aviso{
+    font-family: var(--letra_tipo_1);
+    font-size: 12;
+    color: #2F3645;
+}
+
+.box_botones{
+    display: flex;
+    gap: 10%;
+}
+
+.box_boton_encriptar{
+    padding: 3% 7%;
+    background-color: #cdd7e6;
+    border-radius: 16px;
+    font-family: var(--letra_tipo_1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.box_boton_desencriptar{
+    padding: 3% 7%;
+    background-color: #cdd7e6;
+    border-radius: 16px;
+    font-family: var(--letra_tipo_1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.box_boton_encriptar:hover{
+    background-color: #B5C0D0;
+    cursor: pointer;
+}
+
+.box_boton_desencriptar:hover{
+    background-color: #B5C0D0;
+    cursor: pointer;
+}
+
+.box_convertido{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color: #d2dae6;
+    box-shadow: 0px 24px 32px -8px ;
+}
+
+
+.box_convertido_texto{
+    padding-top: 25%;
+    font-family: var(--letra_tipo_1);
+    font-weight: 600;
+}
+
+.box_resultado{
+    padding-top: 10%;
+    width: 300px;
+    height: 500px;
+
+}
+
+.box_resultado_texto{
+    font-family: var(--letra_tipo_1);
+    font-size: 25px;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 1.5%;
+    background-color: #2F3645;
+}
+
+.pie_pagina{
+    font-family: var(--letra_tipo_1);
+    color: rgb(237, 237, 237);
+}

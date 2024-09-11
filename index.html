@@ -1,0 +1,40 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<!--RECORDEMOS QUE EL DIV Y SECTION SON COMOS CAJAS CONTENEDORES-->
+<body>
+    <header class="header">ENCRIPTADOR</header>
+    <main class="box_padre">
+        <section class="box">
+            <textarea class="box_texto" name="area_texto" id="area_texto" placeholder="Escribe algo aqui"></textarea>
+            <div class="box_terminos">
+                <img class="box_terminos_advertencia" src="./image/advertencia.png" alt="advertencia">
+                <p class="box_terminos_aviso">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="box_botones">
+                <button class="box_boton_encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="box_boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="box_convertido">
+            <p class="box_convertido_texto" id="titulo_mensaje">No hay texto</p>
+            <img id="deadpool" class="imagen" src="./image/deadpool_texto.png" alt="deadpool_texto">        
+            
+            <div class="box_resultado">
+                <p class="box_resultado_texto"></p>
+            </div>
+        
+        </section>
+      
+    </main>
+    <footer class="footer">
+        <p class="pie_pagina">Developed by Jeremy Duran, 2024 - Learning</p>
+    </footer>
+    
+<script src="code.js"></script>
+</body>
+</html>
